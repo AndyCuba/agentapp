@@ -1,0 +1,37 @@
+<div class="FormComponent">
+    <form class="FormComponent__form">
+        <div>
+            <label for="distance">Количество километров</label>
+            <input 
+                type="number" 
+                name="distance" 
+                id="distance" 
+                [(ngModel)]="distance"
+            />
+        </div>
+        <div>
+            <label for="age">Возраст</label>
+            <input 
+                type="number"
+                name="age"
+                id="age" 
+                [(ngModel)]="age"/>
+        </div>
+        <div>
+            <label for="weight">Вес багажа</label>
+            <input 
+                type="number"
+                name="weight"
+                id="weight" 
+                [(ngModel)]="weight"
+            />
+        </div>
+        <button 
+            (click)="sendRates()" 
+            type="submit"
+            [disabled]="!(distance && age && weight)"
+        >
+            Рассчитать
+        </button>
+    </form>
+</div>

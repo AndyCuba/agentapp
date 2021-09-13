@@ -1,0 +1,9 @@
+.AeroflotComponent {
+  div {
+    border: 1px solid gray;
+    padding: 10px;
+    &:first-child {
+      background-color: rgb(221, 218, 218);
+    }
+  }
+}

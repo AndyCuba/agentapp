@@ -1,0 +1,42 @@
+.FormComponent {
+  padding: 20px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  form {
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      font-size: 20px;
+    }
+    label {
+      font-weight: 600;
+    }
+    input {
+      width: 500px;
+      &:focus {
+        outline: rgb(55, 142, 241) 1px solid;
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+    button {
+      background-color: rgb(55, 142, 241);
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+      &:disabled {
+        background-color: rgb(207, 207, 207);
+      }
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+}
